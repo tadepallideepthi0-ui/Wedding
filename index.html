@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Wedding Invitation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="wedding_using_css.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h2>ROYAL WEDDING</h2>
+      <a href="#rsvp">RSVP</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="small-title">TOGETHER WITH THEIR FAMILIES</p>
+
+        <h1>Wedding<br />Celebration</h1>
+
+        <div class="ornament">✦ ❖ ✦</div>
+
+        <p class="couple-names">ANAND <span>&</span> PRIYANKA</p>
+
+        <p class="wedding-date">25 DECEMBER 2026</p>
+
+        <a href="#events" class="gold-btn"> EXPLORE INVITATION </a>
+      </section>
+
+      <section class="welcome">
+        <p class="section-label">A BEAUTIFUL BEGINNING</p>
+        <h2>You're Invited!</h2>
+        <p>
+          With the blessings of our families, we invite you to celebrate our
+          special day and share the joy of our new beginning.
+        </p>
+      </section>
+
+      <section class="events" id="events">
+        <p class="section-label">SAVE THE DATE</p>
+        <h2>Wedding Events</h2>
+
+        <div class="event-card">
+          <span>✦</span>
+          <h3>Wedding Ceremony</h3>
+          <p>25 December 2026</p>
+          <p>09:00 AM onwards</p>
+        </div>
+
+        <div class="event-card">
+          <span>❖</span>
+          <h3>Wedding Reception</h3>
+          <p>25 December 2026</p>
+          <p>07:00 PM onwards</p>
+        </div>
+      </section>
+
+      <section class="countdown">
+        <p class="section-label">THE BIG DAY IS COMING</p>
+        <h2>Countdown</h2>
+
+        <div class="timer">
+          <div><strong id="days">00</strong><small>Days</small></div>
+          <div><strong id="hours">00</strong><small>Hours</small></div>
+          <div><strong id="minutes">00</strong><small>Minutes</small></div>
+          <div><strong id="seconds">00</strong><small>Seconds</small></div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <p class="section-label">OUR MEMORIES</p>
+        <h2>Photo Gallery</h2>
+
+        <div class="gallery-grid">
+          <img src="couple.jpg" alt="Couple" />
+          <img src="engagement.jpg" alt="Engagement" />
+          <img src="haldi.jpg" alt="Haldi" />
+          <img src="mandap.jpg" alt="Mandap" />
+          <img src="mehendi.jpg" alt="Mehendi" />
+          <img src="reception.jpg" alt="Reception" />
+        </div>
+      </section>
+
+      <section class="venue">
+        <p class="section-label">JOIN OUR CELEBRATION</p>
+        <h2>Wedding Venue</h2>
+        <h3>Sri Venkateshwara swami temple</h3>
+        <p>Amalapuram, Andhra Pradesh</p>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=16.58054,82.01283"
+          target="_blank"
+          class="directions-btn"
+        >
+          Get Directions
+        </a>
+      </section>
+
+      <section class="rsvp" id="rsvp">
+        <p class="section-label">WE HOPE YOU CAN JOIN US</p>
+        <h2>RSVP</h2>
+        <p>Please confirm your attendance.</p>
+
+        <form id="rsvpForm">
+          <input
+            type="text"
+            id="guestName"
+            placeholder="Your Full Name"
+            required
+          />
+
+          <input
+            type="tel"
+            id="guestPhone"
+            placeholder="Phone Number"
+            required
+          />
+
+          <select id="attendance" required>
+            <option value="">Will you attend?</option>
+            <option value="Yes">Yes, I'll be there!</option>
+            <option value="No">Sorry, can't attend</option>
+          </select>
+
+          <input
+            type="number"
+            id="guestCount"
+            placeholder="Number of Guests"
+            min="1"
+            max="20"
+            required
+          />
+
+          <button type="submit" class="gold-btn">SUBMIT RSVP</button>
+        </form>
+
+        <p id="rsvpMessage"></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="ornament">✦ ❖ ✦</div>
+      <h2>ANAND & PRIYANKA</h2>
+      <p>Made with Love ❤️</p>
+      <small>© 2026 Royal Wedding Invitation</small>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="wedding_using_javascript.js"></script>
+  </body>
+</html>
